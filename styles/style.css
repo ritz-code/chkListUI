@@ -1,0 +1,112 @@
+#chkListTableWrapper{
+    margin: 100px;
+}
+
+#body{
+      background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(18,54,98,1) 100%);
+    font-family: mon;
+}
+
+table {
+    width: 40em;
+}
+th, td {
+    border: 0.5px solid #98C1D9;
+}
+th{
+    background-color: #98C1D9!important;
+    padding: 0 30px;
+    font-size: 17px;
+}
+    
+.dataTables_filter input {
+    border: 0.5px solid #98C1D9;
+ }
+
+ div.dataTables_length select {
+    border: 0.5px solid #98C1D9;
+  }
+    
+#chkListTable .desc {
+    width: 80vw!important;
+}
+
+#chkListTable .desc {
+    width: 80vw!important;
+}
+
+table.dataTable thead tr #chkListTableHeader{
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: hsl(191, 57%, 93%);
+ }
+
+.check-input {
+    display: none;
+}
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #98C1D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 3px;
+    transition: 0.3s all;
+}
+.checkbox svg {
+    width: 20px;
+    height: 20px;
+}
+.check-input:checked + .checkbox {
+    background: #EEA423;
+    border: 2px solid #EEA423;
+}
+.check-input:checked + .checkbox svg path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    stroke: #fff;
+    stroke-width: 3;
+    animation: check 4s forwards;
+}
+.checkbox::before {
+    content: "";
+    background: #26bfbf66;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    display: block;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+}
+.check-input:checked + .checkbox::before {
+    animation: ripple 0.3s;
+}
+@keyframes check {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes ripple {
+    to {
+        transform: scale(1);
+    }
+}
+
+.pagination > li > a, .pagination > li > span{
+    background-color:#E2F3F7;
+    color: #212529;
+}
+.pagination > li.active > a, .pagination > li.active > span{
+    background-color:#44648D;
+    color: #212529;
+    border: 2px solid #44648D;
+}
